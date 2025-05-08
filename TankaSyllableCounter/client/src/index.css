@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Monochromatic black-and-white theme with subtle rounded corners */
+  --background: 0 0% 100%; /* Pure white */
+  --foreground: 0 0% 0%; /* Pure black */
+  --muted: 0 0% 96%; /* Very light gray */
+  --muted-foreground: 0 0% 40%; /* Medium gray */
+  --popover: 0 0% 100%; /* Pure white */
+  --popover-foreground: 0 0% 0%; /* Pure black */
+  --card: 0 0% 100%; /* Pure white */
+  --card-foreground: 0 0% 0%; /* Pure black */
+  --border: 0 0% 90%; /* Light gray */
+  --input: 0 0% 90%; /* Light gray */
+  --primary: 0 0% 0%; /* Pure black */
+  --primary-foreground: 0 0% 100%; /* Pure white */
+  --secondary: 0 0% 96%; /* Very light gray */
+  --secondary-foreground: 0 0% 20%; /* Dark gray */
+  --accent: 0 0% 96%; /* Very light gray */
+  --accent-foreground: 0 0% 20%; /* Dark gray */
+  --destructive: 0 0% 0%; /* Pure black */
+  --destructive-foreground: 0 0% 100%; /* Pure white */
+  --ring: 0 0% 0%; /* Pure black */
+  --radius: 0.5rem; /* Subtle rounded corners */
+  /* Success color for mora counter */
+  --success: 0 0% 20%; /* Dark gray */
+  --success-foreground: 0 0% 100%; /* Pure white */
+}
+
+.dark {
+  /* Dark monochromatic theme with soft dark gray background */
+  --background: 0 0% 15%; /* Soft dark gray */
+  --foreground: 0 0% 98%; /* Soft white */
+  --muted: 0 0% 22%; /* Dark gray */
+  --muted-foreground: 0 0% 70%; /* Light gray */
+  --popover: 0 0% 15%; /* Soft dark gray */
+  --popover-foreground: 0 0% 98%; /* Soft white */
+  --card: 0 0% 18%; /* Slightly lighter dark gray for cards */
+  --card-foreground: 0 0% 98%; /* Soft white */
+  --border: 0 0% 25%; /* Medium-dark gray */
+  --input: 0 0% 22%; /* Dark gray */
+  --primary: 0 0% 98%; /* Soft white */
+  --primary-foreground: 0 0% 15%; /* Soft dark gray */
+  --secondary: 0 0% 25%; /* Medium-dark gray */
+  --secondary-foreground: 0 0% 98%; /* Soft white */
+  --accent: 0 0% 25%; /* Medium-dark gray */
+  --accent-foreground: 0 0% 98%; /* Soft white */
+  --destructive: 0 0% 80%; /* Light gray */
+  --destructive-foreground: 0 0% 15%; /* Soft dark gray */
+  --ring: 0 0% 80%; /* Light gray */
+  --radius: 0.5rem; /* Subtle rounded corners */
+  /* Success color for mora counter */
+  --success: 0 0% 80%; /* Light gray */
+  --success-foreground: 0 0% 15%; /* Soft dark gray */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
